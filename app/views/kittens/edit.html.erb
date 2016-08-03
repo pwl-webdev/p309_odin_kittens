@@ -1,0 +1,6 @@
+Editing kitten <%= @kitten.name %>
+
+<%= render "form" %>
+
+<%= link_to "delete", kitten_path(@kitten), method: :delete,
+                   data: { confirm: "You sure?" } %>

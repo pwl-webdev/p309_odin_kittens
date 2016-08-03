@@ -1,0 +1,9 @@
+Kitten <%=@kitten.name%> details
+<br>
+name <%=@kitten.name%>
+age <%=@kitten.age%>
+cuteness <%=@kitten.cuteness%>
+softness <%=@kitten.softness%>
+
+<%= link_to "delete", kitten_path(@kitten), method: :delete,
+                   data: { confirm: "You sure?" } %>

@@ -1,0 +1,15 @@
+<%= form_for @kitten do |k| %>
+	<%= k.label ("Name") %>
+    <%= k.text_field :name, :value => @kitten.name %>
+    <br>
+    <%= k.label ("Age") %>
+    <%= k.text_field :age, :value => @kitten.age %>
+    <br>
+    <%= k.label ("Cuteness") %>
+    <%= k.text_field :cuteness, :value => @kitten.cuteness %>
+    <br>
+    <%= k.label ("Softness") %>
+    <%= k.text_field :softness, :value => @kitten.softness %>
+    <br>
+    <%= k.submit "Submit" %>
+<% end %>

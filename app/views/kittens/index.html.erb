@@ -1,0 +1,9 @@
+Kitten index
+<br>
+<br>
+<% @kittens.each do |k| %>
+name <%=k.name%> | age <%=k.age%> | cuteness <%=k.cuteness%> | softness <%=k.softness%> 
+<%= link_to "delete", kitten_path(k), method: :delete,
+                   data: { confirm: "You sure?" } %>
+<br>
+<% end %>
